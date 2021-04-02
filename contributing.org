@@ -1,0 +1,107 @@
+#+TITLE: Contributing to Mercadolibre - dark
+#+STARTUP: nofold
+
+* Table of Contents :TOC_5:
+- [[#getting-involved][Getting Involved]]
+- [[#how-to-report-style-issues][How to Report Style Issues]]
+  - [[#i-dont-know-css][I don't know CSS]]
+  - [[#i-know-both-css--github][I know both CSS & GitHub]]
+    - [[#duplicate-the-style-or-create-a-companion-style][Duplicate the style or create a "companion style"]]
+      - [[#duplicate-the-style][Duplicate the style]]
+- [[#getting-started][Getting Started]]
+  - [[#style-guide][Style guide]]
+  - [[#contributing-code][Contributing code]]
+  - [[#testing-changes-of-a-local-userstyle][Testing changes of a local userstyle]]
+
+* Getting Involved
+Even if you've never contributed to an Open Source project before, I'm always
+looking for help identifying missing styles or other issues.
+
+* How to Report Style Issues
+** I don't know CSS
+If you don't know CSS very well and have found a missing style, please include
+as much as possible of following information when opening an issue:
+
+- Screenshot of the problem
+- Include the element(s) in the console if at all possible
+  - To select an element, target it with your mouse then right-click and choose
+    "Inspect Element", otherwise press `Ctrl + Shift + C` and select it with
+    your left mouse click
+  - Copy the HTML if at all possible
+
+** I know both CSS & GitHub
+- *Recommended:* [[#duplicate-the-style][duplicate]] the style.
+- Follow the [[#style-guide][style guide]] below
+- Make any needed changes, then send us a pull request
+- Please include a URL to the page (if public)
+
+*** Duplicate the style or create a "companion style"
+When a userstyle is installed from a page, Stylus stores the url of that page
+internally along with the CSS style.
+
+If that userstyle is then modified or even renamed, it will still maintain the
+original install location, but all automatic updates of the modified userstyle
+will be blocked to preserve local changes. A manual update of that userstyle is
+required to update, but be warned that an update *will overwrite* all changes,
+i.e. *all modifications will be lost*!
+
+To get around this duplicate it.
+
+**** Duplicate the style
+The easiest way is to copy and paste the source code into a new, *local* style.
+
+1. Copy the style
+    - Open mercadolibre-dark in the [[https://github.com/openstyles/stylus/wiki/Editor][Stylus' Editor]] [[https://user-images.githubusercontent.com/136959/44433186-de548e80-a56a-11e8-8947-d3331bd6d7a1.png]]
+    - Copy the code directly from the edit window.
+    - If not all content is automatically selected in the popped up window, use Select All (@@html:<kbd>@@Ctrl@@html:</kbd>@@+@@html:<kbd>@@A@@html:</kbd>@@), then Copy (@@html:<kbd>@@Ctrl@@html:</kbd>@@+@@html:<kbd>@@C@@html:</kbd>@@) the style.
+2. Paste into a new style
+    - Click "Write new style" in the [[https://github.com/openstyles/stylus/wiki/Manager][Stylus' Manager]] [[https://user-images.githubusercontent.com/136959/44433186-de548e80-a56a-11e8-8947-d3331bd6d7a1.png]]
+    - Paste (@@html:<kbd>@@Ctrl@@html:</kbd>@@+@@html:<kbd>@@V@@html:</kbd>@@) the style into the code block area.
+    - Give the style a name, then save.
+
+
+* Getting Started
+** Style guide
+
+- Don't create a new line, if it's background, text, link or border you will find it, just add a =comma= before the ={= and put the =new_element= after. 
+  #+BEGIN_SRC css
+  /* good */
+    element, new_element { 
+        property: value;
+    }
+  /* bad */
+    element { 
+        property: value;
+    }
+    new_element { 
+        same-property: same-value;
+    }
+  #+END_SRC
+
+
+- If you want to add a new userstyle variable/feature, please open an issue and
+  discuss it with us first.
+- Don't include version bumps with your contribution, all releases are handled
+  internally.
+- If your pull request (PR) fixes an open issue or replaces another PR, include
+  fixes/closes =#issue-number= in your commit message title. [[https://help.github.com/en/articles/closing-issues-using-keywords][Read more on this]]
+  [[https://user-images.githubusercontent.com/136959/44433186-de548e80-a56a-11e8-8947-d3331bd6d7a1.png]]
+
+** Contributing code
+- [[https://user-images.githubusercontent.com/20738487/72159480-1c06c100-33c5-11ea-91d1-7a67c1dd7ae5.png]]
+  [[https://github.com/santi-san/mercadolibre-dark/archive/master.zip][Download]],
+  [[https://user-images.githubusercontent.com/20738487/72159479-1c06c100-33c5-11ea-9ce4-c3d17110348a.png]]
+  [[https://github.com/santi-san/mercadolibre-dark/fork][fork]], or clone this repository
+- Create and change into a new branch of your local mercadolibre-dark repository
+- Make the changes in the [[https://github.com/santi-san/mercadolibre-dark/blob/master/mercadolibre-dark.user.css][mercadolibre-dark.user.css]] file and verify that they fix the issue
+- Push the changes to your branch
+  + Make sure that your changes address only a *single* issue. Don't combine
+    multiple fixes for unrelated issues into a single pull request.
+- Submit a PR
+
+** Testing changes of a local userstyle
+- Open the =mercadolibre-dark.user.css= file in your browser, and make sure to have "live
+  preview" checked for testing
+  - If you're using a Chromium-based browser, go to /extensions/, open /details/ for
+    Stylus, and enable "Allow access to file URLs".
+- Make some changes then save the file, and Stylus will do its magic.
