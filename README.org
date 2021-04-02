@@ -4,14 +4,34 @@
 * Mercadolibre - Dark @version 1.0.0
 
 Complete dark and customizable theme for [[https://www.mercadolibre.com.ar][Mercadolibre/mercadolivre website]] with a few improvements and customizable options.
-Works on: Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Dominicana, Ecuador, Guatemala, Honduras, México, Nicaragua, Panamá, Paraguay, Perú, Salvador, Uruguay, Venezuela.
 
-[[https://github.com/santi-san/mercadolibre-dark/blob/master/changelog.org][https://img.shields.io/github/v/tag/santi-san/mercadolibre-dark.svg?label=version&style=flat]]
+
 [[https://raw.githubusercontent.com/santi-san/mercadolibre-dark/master/mercadolibre-dark.user.css][https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat]]
 
 #+HTML: <img src="https://raw.githubusercontent.com/santi-san/mercadolibre-dark/master/img/preview.png" width="100%"/>
 
 #+HTML: </div>
+
+** Works on: 
+- Argentina ~ mercadolibre.com.ar
+- Bolivia ~ mercadolibre.com.bo
+- Brasil ~ mercadolivre.com.br
+- Chile ~ mercadolibre.com.cl
+- Colombia ~ mercadolibre.com.co
+- Costa Rica ~ mercadolibre.co.cr
+- Dominicana ~ mercadolibre.com.do
+- Ecuador ~ mercadolibre.com.ec
+- Guatemala ~ mercadolibre.com.gt
+- Honduras ~ mercadolibre.com.hn
+- México ~ mercadolibre.com.mx
+- Nicaragua ~ mercadolibre.com.ni
+- Panamá ~ mercadolibre.com.pa
+- Paraguay ~ mercadolibre.com.py
+- Perú ~ mercadolibre.com.pe
+- Salvador ~ mercadolibre.com.sv
+- Uruguay ~ mercadolibre.com.uy
+- Venezuela ~ mercadolibre.com.ve
+
 
 ** Features
 - Custom backgrounds colors
@@ -24,7 +44,7 @@ Works on: Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Dominicana, E
 You have to install [[https://add0n.com/stylus.html][Stylus]] and then click on the install link below.
 
 
-[[https://raw.githubusercontent.com/santi-san/mercadolibre-dark/master/mercadolibre-dark.user.css][https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg]]
+[[https://raw.githubusercontent.com/santi-san/mercadolibre-dark/master/mercadolibre-dark.user.css][https://img.shields.io/badge/Install%20theme%20with-Stylus-116b59.svg]]
 
 ** Contributions
 Any contribution is greatly appreciated.
