@@ -23,11 +23,21 @@
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     /*--GENERAL--------------------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+    .ui-search-reviews__rating-number {
+        color: white;
+    }
     
     * {
+        color: white;
         text-shadow: none !important;
         box-shadow: none !important;
     }
+    
+    .nav-header-plus .nav-left-area.nav-bottom-area .nav-menu-item>a:link, .nav-header-plus .nav-left-area.nav-bottom-area .nav-menu-item>a:visited {
+        color: gold;
+    }
+    
     /*just logo no text*/
     .nav-logo{
         width: 54px !important;

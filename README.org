@@ -4,6 +4,7 @@
 * Mercadolibre - Dark @version 1.0.12
 
 Complete dark and customizable theme for [[https://www.mercadolibre.com.ar][Mercadolibre/mercadolivre website]] with a few improvements and customizable options.
+Contribution for fixing black texts. Some structures changed in 2y
 
 
 [[https://raw.githubusercontent.com/santi-san/mercadolibre-dark/master/mercadolibre-dark.user.css][https://img.shields.io/badge/Install%20from-userstyles.world-116b59.svg?longCache=true&style=flat]]
@@ -39,27 +40,3 @@ Complete dark and customizable theme for [[https://www.mercadolibre.com.ar][Merc
 - Custom links colors
 - Custom price color
 - Custom muted text (this option is using the color of "text-color" with opacity)
-
-** Installation
-You have to install the [[https://add0n.com/stylus.html][Stylus]] extension.
-
-You can go to: [[https://userstyles.world/style/5/mercadolibre-dark-mode][userstyles.world]] and install it from there.
-
-OR
-
-click on the install link below.
-
-[[https://raw.githubusercontent.com/santi-san/mercadolibre-dark/master/mercadolibre-dark.user.css][https://img.shields.io/badge/Install%20theme%20with-Stylus-116b59.svg]]
-
-** Contributions
-Any contribution is greatly appreciated.
-
-If you'd like to contribute code, please make sure to read the [[https://github.com/santi-san/mercadolibre-dark/blob/master/contributing.org][contribution
-guidelines]].
-
-If you really like this project and would like to tip me for my work, then you
-can:
-- Buy me a coffee over at [[https://ko-fi.com/satosan][ko-fi]]
-
-** License
-Code released under the [[license][MIT]] license.
