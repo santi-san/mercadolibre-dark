@@ -4,9 +4,8 @@
 @namespace      github.com//santi-san/mercadolibre-dark
 @homepageURL    https://github.com/santi-san/mercadolibre-dark
 @supportURL     https://github.com/santi-san/mercadolibre-dark/issues
-@updateURL      https://raw.githubusercontent.com/santi-san/mercadolibre-dark/master/mercadolibre-dark.user.css
 @author         santi  (https://github.com/santi-san)
-@version        1.0.12
+@version        2.0.0
 @license        MIT
 @preprocessor   stylus
 
@@ -14,34 +13,21 @@
 @var color      _bg-light        'Secondary bg color                    '   #2d333b
 @var color      _link-color      'Link color                            '   #e6bb5d 
 @var color      _text-color      'Text color                            '   #adbac7
-@var color      _price-color     'Price color                           '   #e6bb5d
+@var color      _price-color     'Price color                           '   #00a650
 @var number     _muted           'muted text (use same color of text)   '   [0.6, 0, 1, 0.1]
 ==/UserStyle== */
 
 @-moz-document domain("mercadolibre.com.ar"), domain("mercadolibre.cl"), domain("mercadolibre.com.bo"), domain("mercadolivre.com.br"), domain("mercadolibre.co.cr"), domain("mercadolibre.com.co"), domain("mercadolibre.com.do"), domain("mercadolibre.com.ec"), domain("mercadolibre.com.gt"), domain("mercadolibre.com.hn"), domain("mercadolibre.com.mx"), domain("mercadolibre.com.ni"), domain("mercadolibre.com.pa"), domain("mercadolibre.com.py"), domain("mercadolibre.com.pe"), domain("mercadolibre.com.sv"), domain("mercadolibre.com.uy"), domain("mercadolibre.com.ve") {
     
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
-    /*--GENERAL--------------------------------------------------------------------------------------------------------------------------*/
+    /*--GENERAL--#adbac7------------------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
-
-    .ui-search-reviews__rating-number {
-        color: white;
-    }
     
     * {
-        color: white;
         text-shadow: none !important;
         box-shadow: none !important;
     }
     
-    .nav-header-plus .nav-left-area.nav-bottom-area .nav-menu-item>a:link, .nav-header-plus .nav-left-area.nav-bottom-area .nav-menu-item>a:visited {
-        color: gold;
-    }
-    
-    /*just logo no text*/
-    .nav-logo{
-        width: 54px !important;
-    }
     /*fix card img*/
     .ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__image-container, .ui-recommendations--seller.ui-recommendations--desktop .ui-item img {
         width: 100%;
@@ -53,39 +39,18 @@
         border: 1px solid #2d333b;
         border-radius: 8px;
     }
-    /*arrives tomorrow*/
-    .ui-search-layout--stack .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text,.ui-search-layout--gallery .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text,.promotion-item__container .promotion-item__today-offer-text,.ui-search-layout--gallery .ui-search-result .ui-search-item__promise--same_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--same_day .ui-search-item__promise__text {
-        border-radius: 4px;
-        padding: 5px 10px;
+   .andes-carousel-snapped__wrapper, .poly-card--grid .poly-card__portada {
+        background-color: white ;
     }
-    .ui-search-layout--gallery .ui-search-result:hover, .ui-search-layout--grid .ui-search-result:hover,#ch-dropdown-1,.promotion-item:hover {
-        box-shadow: 0 25px 20px 0 rgba(0,0,0,.16),0 -1px 2px 0 rgba(0,0,0,.1) !important;
-    }
-    /*account*/
-    
-    #nav-header-menu .nav-icon-user::before {
-        border-radius: 50%;
-    }
-    /*market hover -has customized bg-*/
-    .ui-cpg__department__link:hover .ui-cpg__department__link__name, .ui-cpg__department__link__name--WHITE{
-        color: #fff !important;
-    }
-    
-    /* bookmarks dropwdown */
-    .nav-bookmarks-widget__link {
-        border-style: solid;
-        border-top-width: 1px;
-    }
-    /*asked*/
-    .sc-basic-information .andes-thumbnail--square {
-        mix-blend-mode: initial;
+    .ui-pdp-icon .ui-pdp-color--BLACK img,div.ui-pdp-icon > img {
+        filter: invert(65%) sepia(95%) saturate(277%) hue-rotate(357deg) brightness(105%) contrast(80%);
     }
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     /*--BACKGROUND DARK------------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
-    
-    main,.nav-footer,[for="nav-footer-access-switch"],.nav-footer-access-content,.layout--embed__header,input,.sb-suggestions,button.nav-search-btn, button.nav-search-btn:focus,.nav-categs-departments,.andes-button--filled,.categories .category:hover,.carousel-container .next-button, .carousel-container .prev-button,.item__banner.banner__label .label,.ui-pdp-buybox,.ui-box-component-pdp__visible--desktop,.ui-pdp-other-sellers,.ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.with-shipping.with-extra-one,.ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.without-shipping.with-extra-two,.ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-installments.with-shipping,.ui-vpp-discrete-bar__bar__interval,.ui-vpp-striped-specs__header,.ui-recommendations-comparator__table tbody tr:nth-child(2n+1) .andes-table__header:first-child,.ui-recommendations-comparator__table tbody tr:nth-child(2n) .andes-table__column:first-child, .ui-recommendations-comparator__table tbody tr:nth-child(2n+1), .ui-recommendations-comparator__table tbody tr:nth-child(2n+1):hover,.andes-button--quiet, .andes-button--quiet:focus, .andes-button--quiet:link, .andes-button--quiet:visited,.ui-vpp-striped-specs .andes-table__head,.ui-vpp-highlighted-specs__striped-specs .ui-vpp-striped-specs .ui-vpp-striped-specs__header,.ui-vpp-rating__level__progress-bar-container .ui-vpp-rating__level__progress-bar__background,#nav-header-menu .user-menu,.andes-tooltip,.ui-pdp-gallery__column__variation-picture, .ui-pdp-gallery__figure,.andes-list,.ui-search-animated-switch__switch-bar--off,.ui-search-animated-switch__switch-bar--on,.ui-search-layout--stack .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text,.ui-search-layout--stack .ui-search-result .ui-search-bookmark__btn,.ui-recommendations.ui-recommendations--cheaper .item,.andes-button--loud, .andes-button--loud:focus, .andes-button--loud:link, .andes-button--loud:visited,.ui-search-layout--gallery .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text,.ui-vip-grouped-header,.ui-pdp-component-list,.andes-table__row,::selection,.ui-pdp-questions__tooltip,.myml-nav__menu-item:focus, .myml-nav__menu-item:hover,.promotion-item__container .promotion-item__today-offer-text,.ui-search-variations-pill,.ui-search-layout--gallery .ui-search-result .ui-search-item__promise--same_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--same_day .ui-search-item__promise__text,.ui-vpp-apparel-size .ui-vpp-apparel-size__fit-as-expected,.ui-item__shipping,.andes-modal-dialog__actions,.andes-card__footer--link:hover,.sc-list-navbar,.custom-dropdown__button,.custom-dropdown__group-label:hover,.andes-button-dropdown--menu a:hover, .andes-button-dropdown--menu button:hover,.app-wrapper .page-wrapper,.sc-sales-sticky-wrapper,.sc-ui-actions .separator-border, .sc-ui-actions .separator-border--big,.sc-metrics-onboarding-modal .slick-dots li button,.sc-metrics-toolbar-container,.page-column-1, .page-column-2,.column__margin--2,.advice__header--double, .advice__header--miniature, .advice__header--simple,.messages,.interested-buyers-filter,.slick-slide,.loyalty-partners-admin-summary-desktop,.main-resume,.related-links a:hover,.app-wrapper,.andes-badge--generic--quiet.andes-badge--generic.andes-badge--pill,.ui-cpg--reset,.ui-vip-core--modal,.generic-layout__container,.andes-form-control--textfield .andes-form-control__control,.ui-pdp-qadb__search-bar__search,.ui-pdp-qadb__search-bar__search:hover,.modeless-box .modeless-box-item-wrapper:hover,.nav-bookmarks-widget__link,.main-wrapper .main-container--flat, .list-item-container,body, main > div,.sc-messaging-messages,.controls__contentupload .messagewrapper, .controls__contentupload .messagewrapper__text textarea,.messaging .sidebar, .sc-messaging,.main-wrapper,.main-container--deep,.bf-ui-list-row--with-event:hover,.bf-ui-separato,.bf-ui-card-footer:hover,body, html,.ui-list__list-item:hover, .preferences .andes-list ul li:hover {
-        background: _bg-dark !important;
+    /*.andes-button.andes-button--large.andes-button--loud*/
+    main,.andes-carousel-snapped__pagination--light .andes-carousel-snapped__pagination-item button, .category-column .card-grid-item, .site-shopping-info, .regret, input[type="text"], .nav-categs-departments__list--static a:hover, .nav-categs-departments__selected, .hub__boxed-width,.ui-cpg--reset, .ui-cpg__department-menu-link::before, .ui-recommendations-card,table > tbody > tr:nth-child(odd), .andes-form-control--textfield .andes-form-control__control,.ui-pdp-qadb__search-bar__input .andes-form-control__field,.andes-switch__input::before, .mshops-card-variation-original__item-box, .ui-recommendations-comparator__table tbody tr:nth-child(2n+1) .andes-table__header:nth-child(2n+1), .andes-table__row.ui-vpp-striped-specs__row:nth-child(odd) th.ui-pdp-buy-box-offers__offer-list.andes-list--selectable .andes-list__item.ui-pdp-buy-box-offers__offer-list-item--NOT-SELECTED,.ui-box-component-pdp__visible--desktop,.ui-pdp-other-sellers, .andes-table__row.ui-vpp-striped-specs__row:nth-child(odd) th, .ui-review-capability-rating__level__progress-bar__background, .ui-pdp-buybox, .ui-vip-grouped-header__header-store, .ui-pdp-component-list, .ui-recommendations-carousel-wrapper-ref .poly-card--grid-card, .ui-qadb__make-question-sa__content .andes-form-control__field, .light.hub, .navigation-official-stores .andes-card,.ui-vpp-discrete-bar__bar__interval, .sb-suggestions,.ui-search-footer-components,.seo-ui-card-blog-entry-container.andes-card--flat,.hub__cardposters,.hub__carousel,.andes-dropdown.andes-dropdown--form .andes-dropdown__trigger,.andes-form-control--textfield .andes-form-control__field,.ui-pdp-specs__table tbody tr:nth-child(2n+1) .andes-table__header:first-child,.andes-modal,.andes-modal__scroll,.andes-modal__header,.layout--embed .layout--embed__header {
+        background-color: _bg-dark !important;
     }
     
     
@@ -93,8 +58,8 @@
     /*--BACKGROUND LIGHT-----------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     
-    body,.nav-header,.site-shopping-info,section.regret,.payment-data .payment-data-container,.ui-item,.ui-card,.advertising,.discovery .advertising,.category, .nav-categs-detail,.hub__boxed-width,.ui-pdp-container--pdp,.ui-vpp-striped-specs__row:nth-of-type(2n),.andes-table__header,.ui-recommendations-comparator__table tbody tr:nth-child(2n), .ui-recommendations-comparator__table tbody tr:nth-child(2n):hover,.ui-recommendations .ui-item,.ui-pdp-seller__item-description::after,.ui-pdp-other-sellers-item__tag,#nav-header-menu .user-menu a.user-menu__user-badge-email:hover,#nav-header-menu .user-menu .user-menu__shortcuts a:hover,.ui-search-filter-highlighted__container,.ui-search-listing-disclaimer__card,.andes-pagination__button--current .andes-pagination__link,.andes-pagination__button .andes-pagination__link:hover,.ui-search-bottom-ads__wrapper,.ui-search-applied-filters__link .andes-tag__tag-hover-surface,.andes-modal-dialog,.ui-search-price-filter-action-btn:disabled,.andes-list--selectable .andes-list__item:focus, .andes-list--selectable .andes-list__item:hover,button.andes-button--loud,.myml-nav,.ch-box-info,.ch-dropdown-trigger-skin.ch-dropdown-trigger-on, .ch-dropdown-trigger-skin.ch-dropdown-trigger-on:hover,.ch-box-lite,.purchases-dropdown-filters,.promotion-item, .sc-news .sc-news-publicity .carousel-container ul li > button,.sc-notices-large-container, .sc-notices-short-container,.sc-ui-empty-view,.andes-form-control__border,.andes-form-control:hover .andes-form-control__border::after,.custom-dropdown__groups-container,.andes-button-dropdown--menu,.andes-button-dropdown--menu a, .andes-button-dropdown--menu button,.sc-response-time,.sc-dropdown-group ~ .sc-dropdown-group::after,.sc-dropdown-group .andes-dropdown .andes-dropdown__trigger,.sc-ui-hover-button:not(.disabled):hover,.card__thermometer,.advice__card,.lineal__group,.advice__body--group,.metrics__group,.card__metric--group, .card__metric--group-newbie,.card__metric--body-group,.task__card,.error-notfound,.header__container .header__column .header__link:hover,.sc-settings-empty-state,.fAhHdE,.coUBzQ,.open-card--container,.big-side-tools,.carousel .info-card,.no-results,.billing-ui-empty-state,.pp-onboarding-component, .nav-categs-departments__list--static a:hover, .nav-categs-departments__selected,.ui-navigation-header__lgpd__content,.dynamic__carousel .dynamic-carousel-normal-desktop .andes-card,.ui-search-layout--gallery .ui-search-result, .ui-search-layout--grid .ui-search-result,.ui-cpg__department__menu,.squared-item, .squared-item .lazy-load,.nav-search .nav-category,.andes-modal-dialog__header--scrolled,.cOlvWG,.dirXSx,.layout-ml__main-container, .modeless-box,.modeless-box .modeless-box-remove, .list-item-grouper, .user-header-chat,.sc-messaging-controls,.bf-ui-context-with-ellipsis,.bf-ui-card,.detail-container,.sc-summary .andes-card, .andes-message--quiet,.andes-card.sc-item,.white-background,.sc-question--toggle.opened,.ui-bookmarks-list-desktop__list,.andes-card.andes-card--flat.andes-card--default,.billing-view .andes-card,.ml-addresses,.andes-card--padding-default .andes-card__content,.preferences .andes-list {
-        background:  _bg-light !important;
+    body,.nav-header,.andes-card, .ui-recommendations-carousel-snapped.new-carousel, .poly-card, .andes-carousel-snapped__control, .ui-card, .advertising-square, .wrapper, .section-header,.nav-footer, #nav-footer-access-switch, .regulation-row,.nav-categs-departments, .nav-categs-detail, #special div, .andes-form-control__field,.ui-search-price-filter-action-btn,.ui-search-listing-disclaimer__card,.andes-pagination__link[aria-current="page"],.andes-pagination__link:hover, .andes-list, .ui-cpg__department-menu,.ui-search-applied-filters__link .andes-tag, .ui-pdp-container--pdp,table > tbody > tr:nth-child(even),.andes-carousel-snapped__pagination--light [data-andes-carousel-snapped-pagination-item] [data-andes-carousel-snapped-pagination-action], .ui-search-layout--grid__container .ui-recommendations-card, .ui-search-filter-highlighted__container, .mshops-pads-variation-original__header, .mshops-pads-variation-original__items-container, .row.container.history, .andes-table__header,.ui-review-capability-photo-navigation__divider, .ui-review-capability__header, .onboarding-cp .andes-tooltip, .nav-search .nav-category,  .ui-recommendations-carousel-snapped .andes-carousel-snapped--scroll-hidden, .ui-search-filter-intervention .andes-carousel-snapped, .andes-carousel-snapped.ui-search-filter-intervention-carousel.andes-carousel-snapped--scroll-hidden .andes-carousel-snapped__wrapper, .promotion-item .promotion-item__container, .andes-carousel-snapped__wrapper, .ui-vpp-header-top-brand-card,.about,.andes-carousel-snapped__controls-wrapper,.faceted-search-desktop,.ui-search-filter-groups input.andes-form-control__field.andes-form-control__field, .ui-pdp-action-row--secondary,.filters_header_container.full-carousel,.filters_section .price-filter_container .price-filter_column input.price-filter__value,.filters_section .price-filter_container .price-filter__action-link.disabled,.filters_section .applied_filters_container .applied_filter{
+        background-color:  _bg-light !important;
     }
     
     
@@ -102,19 +67,19 @@
     /*--BACKGROUND LINK------------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     
-    .ui-vpp-discrete-bar__bar__interval--highlighted,.ui-pdp-background-color--GRAY_40,.ui-pdp-collapsable.ui-pdp-collapsable--is-collapsed .ui-pdp-collapsable__container::after,.andes-tabs__slider,.carousel-container .next-button::after, .carousel-container .next-button::before, .carousel-container .prev-button::after, .carousel-container .prev-button::before,.ui-vpp-rating__level__progress-bar-container .ui-vpp-rating__level__progress-bar__fill-background,.ui-pdp-breadcrumb__link::after,.ui-pdp-share + .ui-pdp-syi::before,.ui-search-view-change::before,.andes-list li::after,.ui-search-animated-switch__switch-bar::after,.andes-modal--tight .andes-modal-dialog__button-close::after, .andes-modal--tight .andes-modal-dialog__button-close::before,.ui-search-price-filter-action-btn,.ui-vpp-denounce__action::before,.sc-news .sc-news-publicity .carousel-container ul .slick-active > button,.sc-metrics-onboarding-modal .slick-dots li.slick-active button,.andes-tooltip--highlight .andes-tooltip-button-close::after, .andes-tooltip--highlight .andes-tooltip-button-close::before,.ui-pdp-questions__questions-others-question-modal__content .andes-modal-dialog__button-close::after, .ui-pdp-questions__questions-others-question-modal__content .andes-modal-dialog__button-close::before,.myml-nav__section-heading--has-items::before, .myml-nav__section-heading--has-items::after,.app-wrapper--menu-expanded.app-wrapper--menu-expanded-static [class^="myml-nav__ham"],.andes-tabs__slider-filled {
-        background: _link-color !important;
+    .andes-carousel-snapped__pagination--light .andes-carousel-snapped__pagination-item--active button,  .ui-vpp-highlighted-specs__filled-icon, .denounce-dropdown__circle,.andes-carousel-snapped__pagination--light [data-andes-carousel-snapped-pagination-item][data-andes-carousel-snapped-pagination-item-active="true"] [data-andes-carousel-snapped-pagination-action], .andes-switch__input::after, .ui-review-capability-rating__level__progress-bar__fill-background,.ui-vpp-discrete-bar__bar__interval--highlighted, .ui-recommendations-comparator__table__body__column .ui-recommendations-comparator--no-attr::after,.andes-tab--selected .andes-tab__link::after,.andes-message__close--quiet::after, .andes-message__close--quiet::before {
+        background-color: _link-color !important;
     }
     
     
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     /*--BACKGROUND OTHERS----------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
-    .andes-dropdown__popover,.ui-search-search-modal::after,.purchases-dropdown-filters__filter:hover,.sc-metrics-onboarding-book__icon,.metrics__header,.ui-item__shipping.ui-item__shipping--free,.andes-card,.slick-slider .slick-slide,.message-line__message--receiver::after, .sc-messaging-attachment .attachment__action {
+    .card-grid-container-image,.andes-table__row,.ui-vpp-fit-as-expected .ui-vpp-fit-as-expected__fit-as-expected,.ui-search-search-modal::after {
         background: transparent !important;
     }
     
-    .official-stores{
+    .ui-pdp-collapsable.ui-pdp-collapsable--is-collapsed .ui-pdp-collapsable__container::after,.andes-carousel-snapped__exhibitor-wrapper.andes-carousel-snapped__hero--desktop .gradient{
         background-image: none !important;
     }
     
@@ -123,23 +88,14 @@
     /*--COLOR LINKS----------------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     
-    a,.andes-button--filled, .nc-icon,.category-list__permanlink-custom,.description,.ui-pdp-color--BLACK,.ui-pdp-color--BLUE,.ui-pdp-buybox__quantity__selected,.ui-pdp-seller__sales-description,.ui-pdp-other-sellers-item__tag,#nav-header-menu .nav-header-username-chevron,.user-menu__user-badge-email__chevron,.ui-vpp-highlighted-specs__features-list-item::before,.ui-search-view-options .andes-dropdown--compact .andes-dropdown__trigger, .ui-search-view-options .andes-list__item-text,.ui-search-filter-dt-title,.ui-search-filter-results-qty,.ui-search-reviews__ratings .ui-search-icon--star,.ui-search-layout--stack .ui-search-result .ui-search-bookmark__btn,.ui-search-item__ad-label--blue,.ui-search-search-modal-filter-match-count,.andes-button--loud:hover,.myml-nav__section-title,.ch-dropdown-trigger-skin::after,.promotion-item__seller,.dynamic__carousel .add-to-cart__choose-options, .dynamic__carousel .andes-button.dynamic-carousel__add-to-cart-button,span.andes-breadcrumb__label,.sc-ui-hover-button__text, .sc-news-filter-subgroup__title > p,.custom-dropdown__button-label, span.custom-dropdown__option.custom-dropdown__group-label,.myml-nav__menu-item.myml-nav__menu-item--active > span,.andes-dropdown__trigger,.ch-dropdown-trigger-skin,.sc-fznyYp,.link button,.nav-menu-item .nav-menu-categories-link::after,.nav-categs-detail__categ-list a:hover, .nav-categs-detail__categ-list a:link:hover,.ui-navigation__collapsible__cta,.ui-navigation-component-list .ui-item__installments,.ui-item__action,.ui-search-card-add-to-cart__button, .ui-search-card-add-to-cart__count,.review-denounce,.review-tooltip-footer span,#nav-header-menu i::before,#nav-header-menu a:hover i::before, .modeless-box .modeless-box-remove, .modeless-box .modeless-box-remove:hover,.nav-bounds.nav-bounds-with-cart .nav-cart ::before, .nav-bounds.nav-bounds-with-cart .nav-cart:hover ::before, #nav-header-menu > a.option-bookmarks .bookmarks-text::after,.bf-ui-link,.messaging-item_info-dots_name, .andes-button__text:hover,.bf-ui-rich-text.bf-ui-rich-text--neutral,.bf-ui-rich-text.bf-ui-rich-text--neutral, .sc-question--toggle .question .sc-question--information .sc-question--information--date_ago,.sc-question-label--action .sc-label__text,.ui-card-ml-action-button .ui-card-ml-label,.cl-info__total-amount,.andes-button--transparent,.ml-addresses-data__item--strong,.ui-search-pagination .andes-pagination__button--current .andes-pagination__link,.ui-search-pagination .andes-pagination__arrow-title,.ui-pdp-reviews .andes-tab__link { 
+    a, i, .nav-bounds .nav-cart ::before, #nav-footer-access-switch, .nav-menu-item span, .andes-button__content, .ui-search-search-result__quantity-results, .ui-search-filter-dt-title, input::placeholder, .andes-pagination__link[aria-current="page"], .andes-floating-menu span,.ui-pdp-buybox__quantity__selected, .ui-pdp-collapsable__action, table tr,.ui-recommendations-comparator__table__header__link__text.no-action, .show-more-click, .ui-pdp-seller__link-trigger-button > span:last-child,.desktop__view .category-list__permalink-custom, .desktop__view .category-list__permalink-title, .ui-review-capability-fae button, .ui-pdp-color--BLUE,.ui-search-item__attributes-container-grid .ui-search-item__attributes-grid li,.andes-tab--selected .ui-vip-poi__tab-title,.andes-tab--selected,.ui-search-card-attributes__attribute,.ui-search-money-picker-dt-title, .ui-search-money-picker-dt-title::after,.andes-typography--color-secondary,.andes-typography--color-link,.ui-vpp-box-list li,.ui-pdp-generic-brands-summary__subtitles__subtitle::marker,.ui-recommendations-card__attributes,.poly-component__attributes,.poly-component__location,.promotion-item__ad-container .promotion-item__ad-label{ 
         color: _link-color !important; 
-    }
-    
-    
-    /*-----------------------------------------------------------------------------------------------------------------------------------*/
-    /*--PRICE COLOR (you should only put elemnents that refers to price text)------------------------------------------------------------*/
-    /*-----------------------------------------------------------------------------------------------------------------------------------*/
-    
-    .ui-item__price,span.dynamic-carousel__price > span,.ui-pdp-price,.price-tag-symbol,.price-tag-fraction,.promotion-item__price > span,.advertising-vip-right .advertising-vip-right__items .item-list .item-description .item-price,.price-tag-cents{
-    color: _price-color;
     }
     
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     /*--TEXT OPACITY (for mutted text) --------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
-    .ui-item:hover .ui-item__discount-price.price-tag,.dynamic-carousel__oldprice,.ui-pdp-subtitle,.ui-pdp-review__amount,.ui-pdp-price__original-value,.ui-recommendations-comparator__table__header__link__text.no-action,.ui-pdp-color--GRAY,.ui-pdp-reviews__comments__review-comment__likes,.ui-search-filter-results-qty,.ui-search-search-result__quantity-results,.ui-search-layout--stack .ui-search-result .ui-search-price__original-value,.sc-summary .andes-dropdown__trigger,.statistics-card-percentage,.sc-label-counter,.sc-results,.andes-list__item-secondary,.field-value__value span,.ui-navigation-component-list .ui-item__installments,.review-denounce,.review-tooltip-footer span,.ui-pdp-questions__questions-others-question-modal__content .andes-modal-dialog__button-close::after, .ui-pdp-questions__questions-others-question-modal__content .andes-modal-dialog__button-close::before,.ui-search-layout--gallery .ui-search-result .ui-search-item__location, .ui-search-layout--grid .ui-search-result .ui-search-item__location,#nav-header-menu a:hover i::before, .modeless-box .modeless-box-remove:hover, .nav-bounds.nav-bounds-with-cart .nav-cart:hover ::before, .bf-ui-link:hover,.sc-question--toggle .question .sc-question--information .sc-label__text, .sc-question--toggle .question .sc-question--information .sc-question--information--date_ago,.sc-question--toggle.opened .sc-question--information .question--container .sc-question--information--subLabel {
+    .ui-search-filter-results-qty, input::placeholder,.ui-pdp-header .ui-pdp-subtitle,.ui-pdp-promotions-pill-label__text,.ui-pdp-buybox__quantity__available, .ui-vpp-highlighted-specs__features-list-item::before,.ui-recommendations-comparator__reviews__amount, .ui-recommendations-comparator__reviews__rating,.ui-pdp-color--GRAY, .ui-review-capability__summary__description__text, .ui-review-capability-comments__comment__date, .ui-review-capability-rating__level__value-container, .ui-pdp-qadb__questions-list__question-item__separate, .promotion-item .promotion-item__container .promotion-item__seller,.ui-search-layout--stack .ui-search-result--core .ui-search-item__group--details .ui-search-item__details,.ui-search-item__group--title-grid .ui-search-item__subtitle-grid,.ui-search-item__location-container-grid .ui-search-item__location-label,.ui-search-item__official-store-grid .ui-search-official-store-label,.andes-form-control__message, .ui-search-money-picker__btn,.andes-typography--color-secondary,.poly-component__location,.promotion-item__ad-container .promotion-item__ad-label,.filters_section .list .list_element .quantity,.andes-list__item-secondary{
         opacity: _muted;
     }
     
@@ -148,55 +104,68 @@
     /*--COLOR TEXT-----------------------------------------------------------------------------------------------------------------------*/
     /*-----------------------------------------------------------------------------------------------------------------------------------*/
     
-    p,[for="nav-footer-access-switch"],.nav-footer-access-title,.nav-footer-copyright,h1,h2,h3,h4,h5,h6,.nav-bounds.nav-bounds-with-cp .nav-menu-cp.nav-menu-cp-logged .nav-menu-cp-send,.andes-form-control__label,.andes-form-control__field,.nav-bounds.nav-bounds-with-cp .nav-menu-cp .nav-menu-link-cp,input,input::placeholder,.sb-suggestions__item,button.nav-search-btn, button.nav-search-btn:focus,.payment-data-title,.ui-item__discount-price,.official-stores-slide-title,.advertising__info__title,.advertising__info__text,.category:hover .nc-icon,.category-list__permanlink-title,.dynamic-carousel__oldprice,.ui-pdp-related-search__item,.ui-pdp-subtitle,.ui-pdp-review__amount ,.ui-pdp-price__original-value,.ui-pdp-seller__label-sold,.ui-pdp-buybox__quantity__title,.ui-pdp-buybox__quantity__available,.andes-table,.ui-recommendations-comparator-reviews__amount,.ui-recommendations-comparator__table__header__link__text.no-action,.ui-pdp-color--GRAY,.andes-button--quiet,.ui-pdp-reviews__comments__review-comment__likes,.ui-recommendations__header__title,.ui-pdp-collapsable__action,.ui-pdp-share__link__label,.ui-search-view-options__title,.ui-search-filter-name,.ui-search-search-result__quantity-results,.ui-search-related-search__item,.ui-search-filter-highlighted__title,.ui-search-filter-highlighted__subtitle,.ui-search-layout--stack .ui-search-result .ui-search-price__original-value,.ui-search-item__variations-text,.ui-search-layout--stack .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text,.andes-tag__label,.ui-search-search-modal-filter--multi-selection .ui-search-search-modal-filter-name,.andes-button--loud,.ui-search-layout--gallery .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text,.nav-categs-detail__categ-list a, .nav-categs-detail__categ-list a:link,.ui-pdp-quantity-selector .andes-button,.andes-form-control__field::placeholder,.myml-nav__menu-item-text,.filters_section .subtitle,.promotion-item__container .promotion-item__today-offer-text,.ui-search-variations-pill,.ui-search-layout--gallery .ui-search-result .ui-search-item__promise--same_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--same_day .ui-search-item__promise__text,.sc-news,.andes-checkbox__label,.andes-button--transparent:disabled, .andes-button--transparent[disabled],.minimum-sales-information__number,.minimum-sales-information__text,.status-item__description, .status-item__title,.sc-summary .andes-dropdown__trigger, .statistics-card-percentage,.andes-card__content,.news-card-cdn__content-text,.sc-list-items-length,.custom-dropdown__option,.sc-empty__title,.sc-empty__description,.sc-label-counter,.sc-ui-checkbox-selector__label,.andes-list__item-primary,.sc-results,.sc-metrics-onboarding-carousel-slide__description,.andes-tooltip__text,.sc-dropdown-group__label,.andes-list__item-secondary,.sc-metrics-row-fallback--text,.welcome__modal-group .welcome__wordings,.advice__header--title,.advice__header--number,.interested-buyers-filters,.header__container .header__column--total,.no-results .main-content .subtitle,.no-results .main-content .title,.billing-ui-empty-state .billing-ui-empty-state__container-subtitle, .billing-ui-empty-state__container-title,.field-value__field,.field-value__value span,.without-cards-message,.andes-form-control__message,.ui-cpg__department__link__name,.ui-search-breadcrumb .andes-breadcrumb .andes-breadcrumb__chevron,.ui-search-search-modal-filter-name,.ui-item__attributes, .ui-item__installments,.review-element label,.reviews-summary .total-reviews,.stars-bars .review-rating-row.is-rated .review-rating-label, .stars-bars .review-rating-row.is-rated .review-rating-total,.ui-search-layout--gallery .ui-search-result .ui-search-item__location, .ui-search-layout--grid .ui-search-result .ui-search-item__location,.jccrPC,.epDaLI,.layout-ml__title_text,.documentation__hint, .modeless-box-header, .text-with-link__text, body, .messaging-item_info-dots span,.controls__contentupload .messagewrapper__text textarea,.bf-ui-context-with-ellipsis__subtitle,.andes-message--quiet .andes-message__text, .andes-message--quiet .andes-message__title,.toolbar-container .sc-label__text,.sc-item-info-container,.sc-question--toggle .question .sc-question--information .sc-question--short-question,.sc-question--toggle .question .sc-question--information .sc-label__text,.sc-question--toggle .question .sc-question--information .sc-question--information--title,.sc-question--toggle .question,.sc-question--toggle.opened .sc-question--information .question--container .sc-question--information--subLabel,.ui-card-ml-color--andes-text-color-primary,.ui-card-ml-seller,.font-light-color,.andes-breadcrumb .andes-breadcrumb__label,.ml-addresses-data__item,.commercial-card__expiration, .commercial-card__issuer-name,.pp-hub-card__pdp,.ui-search-pagination {
+    p, .andes-card h2, .ui-recommendations-title-link, .poly-card__content, .andes-money-amount--previous, .poly-text-primary, .advertising-square span, .section-header h2, .regret, .info-slide h2, button.nav-search-btn, .pre-title, .title, .subtitle, .dynamic__carousel-title, .dynamic-carousel__item-container .dynamic-carousel__title, .dynamic-carousel__price, .dynamic-carousel__oldprice, .hub__carousel .carousel__ul .carousel__item-title, .hub__carousel .carousel__title, .ui-cpg__department-link-name, .ui-search-sidebar h1, .ui-search-filter-name, .ui-search-filter-results-qty, input, .andes-money-amount__currency-symbol, .andes-money-amount__fraction, .andes-money-amount__cents, .ui-search-reviews__rating-number, .ui-search-reviews__amount, .ui-search-card-add-to-cart__minimum-label,.andes-pagination__link, .ui-search-view-options__title,.andes-tag__label,.ui-pdp-related-search__item,.ui-pdp-header .ui-pdp-subtitle,.ui-pdp-title,.ui-pdp-review__amount, .ui-pdp-review__rating,.ui-pdp-price,.ui-pdp-promotions-pill-label__text, .ui-pdp-buybox__quantity__title, .ui-pdp-buybox__quantity__available, .ui-pdp-color--BLACK, .ui-vpp-highlighted-specs__features-list-item::before, .ui-recommendations-card__installments-quantity, .ui-recommendations-card__installments-middle-text, .ui-vpp-striped-specs__header, table td, .ui-pdp-description__title, .ui-recommendations-comparator__title,.ui-recommendations-comparator__reviews__amount, .ui-recommendations-comparator__reviews__rating, .ui-pdp-qadb__title, .ui-pdp-questions__subtitle,.ui-pdp-color--GRAY, .ui-review-capability__header__title, .ui-review-capability__reviews-carousel__title, .andes-typography--color-primary, .ui-review-capability__summary__description__text, .ui-review-capability-comments__comment__date, .poly-reviews__rating, .poly-reviews__total, .ui-pdp-actions .andes-button span, .ui-pdp-seller__label-sold, .ui-box-component__title, .ui-pdp-seller__sales-description, .ui-pdp-other-sellers__title,.ui-category-trends-container-desktop, .ui-category-trends-container-tablets, .seo-ui-trends-entry-keyword, .ui-search-breadcrumb__title, .andes-carousel-snapped__title, .ui-search-filter-highlighted__container button label, .ui-search-color--BLACK, .mshops-card-variation-original__installments-text, .ui-search-top-keywords__item, .ui-search-item__brand-discoverability, .dynamic-access-card-ecosistemic__description, .reviews-header-container__title,.ui-search-composed-label-alternatives--normal-text, .ui-search-composed-label-alternatives--value,.ui-search-item__variations-text, .andes-radio__label, .ui-review-capability-rating__level__value-container, .andes-form-control--textfield .andes-form-control__field, textarea::placeholder, .ui-pdp-qadb__questions-list__question-item__separate, .onboarding-cp .onboarding-cp-tooltip, .ui-search-installments-prefix, .category-list__title, .desktop__view .category-list__permalink-title, .ui-search-filter-intervention__link.ui-search-link span, .poly-component__brand, .promotion-item .promotion-item__container .promotion-item__seller, .promotion-item__lightning-deal-container .promotion-item__item-lightning-status,.sb-suggestions__item,.ui-search-layout--stack .ui-search-result--core .ui-search-item__group--details .ui-search-item__details, .hub__subtitle .text__primary,.andes-switch__label,.ui-search-item__group--title-grid .ui-search-item__subtitle-grid,.ui-search-item__title-grid .ui-search-item__title,.ui-search-item__location-container-grid .ui-search-item__location-label,.ui-search-item__official-store-grid .ui-search-official-store-label,.ui-vip-seller-profile,.ui-vip-poi__tab-title,.ui-pdp-questions-unregistered__title,.andes-form-control--textfield .andes-form-control__label,.andes-form-control--textfield:hover .andes-form-control__label,.andes-form-control__message,.andes-checkbox__label,.ui-pdp-specs,.andes-tab, .ui-search-layout--grid .ui-search-result--mot .ui-search-item__location, .ui-search-money-picker__btn,.andes-modal > *,.ui-search-search-modal-filter-name,.ui-pdp-questions__title,.andes-message--quiet .andes-message__text, .andes-message--quiet .andes-message__title,.ui-search-price-filter .ui-search-price-filter-container:first-child::after,.ui-pdp-chart__limit-values,.fulfillment-text,.filters_section .list .list_element .quantity,.andes-list__item-primary,.andes-list__item-secondary{
         color: _text-color !important; 
     }
+    .ui-cpg__department-link-name--white {
+        color: #fff !important;
+    }
     
+    .discovery .advertising-square__info--button{
+        color: _bg-dark !important; 
+    }
     
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--PRICE COLOR (you should only put elemnents that refers to price text)------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .dynamic-carousel__shipping-container span, .ui-search-composed-label-alternatives--value {
+        color: _price-color !important;
+    }
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     /*--OTHERS TEXT/ICONS COLORS--------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
-    .ui-pdp-icon > path, .ui-pdp-reviews__comments__review-comment__likes__like > path, .ui-pdp-reviews__comments__review-comment__likes__dislike > path,.ui-pdp-color--BLACK.ui-pdp-icon,svg.ui-pdp-icon> g > path:nth-child(2),.ui-search-applied-filters__link .andes-tag__close-svg-group,.myml-nav__section-icon--my_purchases > svg > path,.myml-nav__section-icon-container > label > svg > path,.myml-nav__section-heading > span > svg > path,.sc-dropdown-filter__calendar > svg > g > g,.ui-cpg .ui-cpg-color--BLUE.ui-cpg-icon,svg.ui-pdp-icon > g > path:nth-child(1), .modeless-box-header__settings > svg:nth-child(1) > path:nth-child(1),.attachment__action-icon > g:nth-child(2) > use:nth-child(1),polygon,.myml-nav__section-icon--credit_market > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1), .myml-nav__section-icon--credit_market > svg:nth-child(1) > g:nth-child(1) > path:nth-child(2),.myml-nav__section-icon--subscriptions > svg:nth-child(1) > path:nth-child(1),.myml-nav__section-icon--billing > svg:nth-child(1) > path:nth-child(1),.sc-dropdown-filter--group > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1),div.andes-card:nth-child(4) > div:nth-child(2) > div:nth-child(1) > li:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > svg:nth-child(1) > path:nth-child(1),li.ml-addresses__list-item:nth-child(1) > div:nth-child(3) > div:nth-child(1) > a:nth-child(1) > svg:nth-child(1) > g:nth-child(1),li.ml-addresses__list-item  > div > div  > a > svg > g,svg.ui-pdp-icon > g > path:nth-child(1) {
+    .andes-carousel-snapped__control svg, .andes-carousel-snapped__control svg path, .ui-search-price-filter-action-btn svg path, #poly_star_fill path, #poly_star_half > path:nth-child(1), .andes-button__content svg path,.ui-pdp-color--GRAY.ui-pdp-icon,.ui-review-capability-rating__start,.ui-pdp-icon, .ui-pdp-icon--shipping,#location_re > g > g,#points_of_interest_walking > g > g,.ui-pdp-questions-unregistered .ui-pdp-media__figure > svg,.andes-dropdown.andes-dropdown--standalone .andes-floating-menu .andes-dropdown__standalone-arrow path, .andes-list__item-chevron.andes-list__item-chevron--centered svg path{
         fill: _link-color !important; 
     }
-    svg.ui-pdp-icon> g > path:nth-child(1){
-        fill: _bg-dark !important; 
+    .ui-search-price-filter-action-btn svg,.reviews-header-wrapper .andes-button .icon-arrow-left {
+        filter: none;
     }
-    div.review-listing > article > div > form > button > svg > g > g > rect{
-        fill: transparent !important;
+    
+    #poly_star_fill path,.ui-review-capability-categories__rating__stars {
+         stroke: transparent !important; 
     }
-    .ui-pdp-icon--chevron,svg.ui-pdp-icon--bookmark > g > path,.ui-pdp-icon--message-positive > g > path,.ui-pdp-icon--time-positive > g > g, .sc-ui-hover-button__icon > g > g,.andes-tag__svg-fill > path, .andes-dropdown__standalone-arrow > path,.sc-ui-chevron__line1,.sc-ui-chevron__line2,.header__form--submit > svg > g > g,#icon-filter,.chevron-icon > path,.ui-navigation-icon--chevron path,.ui-cpg .ui-cpg-color--BLUE.ui-cpg-icon,.andes-breadcrumb__chevron > svg > path,.ml-addresses-add .ads-button path {
+    .ui-pdp-icon--chevron,  .icon-arrow-left  path,.ui-review-capability-categories__rating__star-empty,#poly_star_half > path:nth-child(2),.ui-review-capability-comments__comment__rating__star-empty, .ui-review-capability-comments__review-comment__denounce-menu__item-menu svg path,.ui-review-capability-fae__chevron, .ui-pdp-bookmark__icon-bookmark, #bookmark path,.ui-search-icon--star-full,#clock > g{
         stroke: _link-color !important; 
     }
-    .andes-breadcrumb__chevron > svg > path,.andes-breadcrumb__chevron > svg > path{
-        stroke: _text-color !important; 
+    #response path, .icon-arrow-left svg path,#ruler > g > g,#scale_up > g > g,#bed > g > g,#bathroom  > g > g,#points_of_interest_transport > g > g > g > g > g > path:nth-child(2),#points_of_interest_education > g > g > g > g > g  > g > path:nth-child(2),#points_of_interest_leisure > g > g > g > g > g > g > path:nth-child(2),#points_of_interest_commerce > g > g > g > g > g > g > path:nth-child(2),#points_of_interest_health > g > g > g > g > g > g > path:nth-child(2),#points_of_interest_walking > g {
+        fill: _link-color !important; 
+        fill-opacity: 1 !important;
     }
-    
-    
+    .ui-pdp-bookmark__icon-bookmark,.ui-search-icon--star-full {
+        fill: none !important;
+    }
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     /*--BORDER NONE--------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
-    .ui-recommendations-comparator__table .andes-table__body .andes-table__row .andes-table__column,.sc-dropdown-group .andes-dropdown .andes-dropdown__trigger,.card__metric--group, .card__metric--group-newbie,.interested-buyers-filters,.nav-search .nav-category,.sc-messaging-controls,.controls__contentupload .messagewrapper, .message-line__message-box::before, .message-line__message-box::after {
-        border: 0px solid red;
+    .nav-categs-detail__header, #special div, .ui-recommendations-carousel-snapped .ui-recommendations-card--horizontal, .andes-table, .ui-recommendations-comparator__table .andes-table__body .andes-table__row .andes-table__column,.ui-recommendations-comparator__table .andes-table__body .andes-table__row, .ui-recommendations-comparator__table tbody tr:nth-child(2n+1) .andes-table__header:first-child, .ui-search-layout--grid__container .ui-recommendations-card, .ui-search-filter-highlighted__container, .mshops-card-variation-original__item-box, .mshops-card-variation-original__info-container, .ui-pdp-component-list:not(:empty), .nav-search .nav-category::before, button.nav-search-btn::before,.promotion-item .promotion-item__container .promotion-item__description, .sb-suggestions,.sb-suggestions__wrapper--additional::before,.ui-pdp-specs__table,.filters_section .switch-filter-desk,.filters_section .price-filter_container .price-filter_column input.price-filter__value{
+        border: 0px solid red !important;
     }
-    
     
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     /*--BORDER DARK---------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     
-    .nav-footer,[for="nav-footer-access-switch"],.nav-footer-access-content,.payment-data-section-leading, .payment-data-section-trailing,.andes-button--filled,.regret__box,.nav-categs-detail__header,.ui-pdp-with--separator:not(:empty)::after,.ui-pdp-with--separator:not(:empty)::after,.ui-search-layout--stack .ui-search-layout__item,.ui-search-search-modal-filter-group .ui-search-search-modal-filters,.dynamic__carousel .add-to-cart__choose-options:hover, .dynamic__carousel .andes-button.dynamic-carousel__add-to-cart-button:hover,.ui-search-variations-pill,.ui-pdp-specs__table,.sc-summary .news-card-cdn__content,.sc-summary .andes-card__header--border,.sc-summary .andes-card__footer--border,.sc-summary .card-link a,.sc-summary .mp-balance-amount,.sc-dashboard__column::after,.sc-ui-checkbox-selector__label,.kdOAmQ,.big-side-tools h1,.related-links,.field-value,.section-card,.ui-cpg__department__menu__link::before,.modal__header,.modeless-box-header,.list-item-grouper--header,.ml-addresses__list-item,.commercial-card,.ui-pdp-container__col.col-1.pl-45.pr-45 .ui-comparator-ref .ui-recommendations-comparator::after {
-        border-color: _bg-dark;
+    .nav-footer, .ui-search-layout--grid .ui-search-result__image, .andes-floating-menu li,#nav-footer-access-switch,.ui-search-layout--stack .ui-search-layout__item,.navigation-official-stores {
+        border-color: _bg-dark !important;
     }
-    .site-shopping-info .info-slide:nth-child(2)::after, .site-shopping-info .info-slide:nth-child(2)::before{
-        background-color: _bg-dark;
-    }
+  
     
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     /*--BORDER LIGHT--------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     
-    .sb-suggestions,.sb-suggestions__wrapper--additional::before,button.nav-search-btn::before, button.nav-search-btn:focus::before,#nav-header-menu .user-menu__one-column .user-menu__shortcuts-separator,.ui-search-sort-filter .andes-dropdown--compact .andes-list .andes-list__item,.andes-form-control__control .andes-form-control__field,.ui-search-price-filter-action-btn .andes-dropdown__arrow::after,.andes-list__item + .andes-list__item,.ui-vpp-apparel-size .ui-vpp-apparel-size__links-separator, .sc-ui-input-search::before,.custom-dropdown__button,.header__container .header__column--filter,.nav-bookmarks-widget__link, .messaging-actions__action:first-child, .messaging-actions__action:nth-child(2),.sc-messaging-messages {
+    .asd {
         border-color: _bg-light;
     }
     
@@ -204,8 +173,8 @@
     /*--BORDER LINK--------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     
-    .andes-button--filled:hover,.andes-button--filled:focus, .andes-button--filled:link, .andes-button--filled:visited,.andes-button--filled:active,.ui-search-view-options .andes-dropdown--compact .andes-dropdown__arrow::after,.andes-list__item--selected::before,.andes-pagination__arrow,.ui-search-price-filter-container .andes-form-control--textbox .andes-form-control__field:focus,button.andes-button--loud:nth-child(1),.myml-nav__menu .myml-nav__section-heading:hover,.dynamic__carousel .andes-button.dynamic-carousel__add-to-cart-button,.ui-pdp-thumbnail,.andes-tag,.andes-dropdown__trigger:hover .andes-dropdown__arrow::after,.advice__body--group,.metrics__group .metrics--expandable,.section-card__arrow,.andes-card__arrow,.nav-categs-departments .nav-categs-departments__list--dynamic a::after,.ui-search-card-add-to-cart__button, .ui-search-card-add-to-cart__count, .bf-ui-card--bordered {
-         border-color: _link-color;
+    .andes-button.dynamic-carousel__add-to-cart-button,.andes-pagination__link[aria-current="page"], .andes-list__item--selected::before,.ui-pdp-with--separator:not(:empty)::after, .ui-review-capability-valorizations .andes-button, .ui-recommendations-carousel-snapped .ui-recommendations-card--vertical,.ui-pdp-buy-box-offers__offer-list, s,.ui-vip-core-container--content-left .ui-pdp-carousel-snapped-up,.ui-vip-core-container--content-left .ui-pdp-container__row--highlighted-specs-attrs, .ui-vip-core-container--content-left .ui-pdp-container__row--description, .ui-pdp-with--separator-top:not(:empty)::before, .ui-search-winner-alternatives--separator-top--grid,.ui-pdp-thumbnail,.ui-pdp-container__col.col-1.pl-45.pr-45 .ui-recommendations-comparator__wrapper-ref:not(:empty)::after,.ui-pdp-questions-unregistered__desktop,.ui-vip-core-container--content-left .ui-pdp-container__row--points-of-interest,.filters_section .price-filter_container .price-filter__action-link::after {
+         border-color: _link-color !important;
     }
     
     
@@ -213,18 +182,18 @@
     /*--BORDER-OTHERS--------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     
-    .another-location__link,.item__banner.banner__label .label,.ui-pdp-buybox,.ui-box-component-pdp__visible--desktop,.ui-pdp-other-sellers,.ui-recommendations .ui-item,.andes-table,.ui-recommendations-comparator__table .andes-table__body .andes-table__row,.ui-recommendations-comparator__table .andes-table__body .andes-table__row:first-child,#nav-header-menu .user-menu .user-menu__chevron,.ui-search-filter-highlighted__container,.ui-search-layout--gallery .ui-search-result__image, .ui-search-layout--grid .ui-search-result__image,.ui-pdp-component-list:not(:empty),.ui-pdp-questions__tooltip::after,.ch-dropdown-trigger-skin.ch-dropdown-trigger-on,.ch-box, .ch-box-lite,.filters_section .fulfillment,.promotion-item:nth-child(2n){
+    .another-location__link {
         border-color: transparent;
     }
     
-    .categories .category, .categories .filler,.categories .category:hover{
+    .categories .category {
         outline-color: _bg-dark;
     }
     
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     /*--ads-----------------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
-    .myml-nav-ads{
+    .myml-nav-ads, .loyalty-buylevel6, .adn, .partners-subscriptions{
         display: none !important;
     }
     }
