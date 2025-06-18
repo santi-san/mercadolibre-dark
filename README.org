@@ -1,9 +1,12 @@
 #+STARTUP: nofold
 #+HTML: <div align="center">
 
-* Mercadolibre - Dark @version 2.0.0
+* Mercadolibre - Dark @version 2.1.0
 
 Complete dark and customizable theme for [[https://www.mercadolibre.com.ar][Mercadolibre/mercadolivre website]] with a few improvements and customizable options.
+
+* 18/06/2025 (dd/mm/yyyy)
+Updated styles after a while...
 
 * 21/06/2024 (dd/mm/yyyy)
 This v2 is a complete new work since some structures changed over this time without updates.
