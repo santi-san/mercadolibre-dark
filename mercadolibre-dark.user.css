@@ -209,14 +209,14 @@
     /*--Favoritos-----------------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     .nav-bookmarks-widget__link, .modeless-box-header, .hub-header, .andes-tabs{
-        background-color: #22272e !important;
-        color: #adbac7 !important;
+        background-color: _bg-dark !important;
+        color: _text-color !important;
     }
     .modeless-box-header{
-        border-bottom: #22272e !important;
+        border-bottom: _bg-dark !important;
     }
     .ui-pdp-color--TEXT_PRIMARY{
-        color: #e6bb5d !important;
+        color: _link-color !important;
     }
     .poly-price__complement{
         background-color: #fff !important;
@@ -233,7 +233,7 @@
     /*--Notificaciones-----------------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     .notification-item__content, .hub-layout--desktop .category-tabs .category-tabs__content, .follow-item, .follows-list__channels-footer{
-        background-color: #22272e !important;
+        background-color: _bg-dark !important;
     }
     
     
@@ -241,18 +241,18 @@
     /*--Canales-----------------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     .broadcast-channels{
-        background-color: #22272e !important;
+        background-color: _bg-dark !important;
     }
     .broadcast-channels__list-header, .broadcast-channels__list-container .following-list{
-        background-color: #2d333b !important;
+        background-color: _bg-light !important;
     }
     
     @media (min-width: 768px) {
         .main-wrapper{
-            background-color: #2d333b !important;
+            background-color: _bg-light !important;
         }
     }
     .list-item-container{
-        background-color: #22272e !important;
+        background-color: _bg-dark !important;
     }
 }
