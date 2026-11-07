@@ -219,14 +219,18 @@
         color: _link-color !important;
     }
     .poly-price__complement{
-        background-color: #fff !important;
+        background-color: white !important;
     }
     
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     /*--Carrito-----------------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------------*/
     .nav-bounds .nav-cart .nav-icon-cart-quantity{
-        color: #e60063 !important;
+        color: red !important;
+    }
+    
+    .recommendations-wrapper{
+        background-color: _bg-light !important;
     }
     
     /*----------------------------------------------------------------------------------------------------------------------------------*/
@@ -254,5 +258,24 @@
     }
     .list-item-container{
         background-color: _bg-dark !important;
+    }
+        
+    .ui-pdp-promotions-pill-label__text{
+        color: white !important;
+    }
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--Mis Compras - Detalles -----------------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    .styles__FloxPageStyle-sc-1iwnk14-0{
+        background-color: _bg-dark !important;
+    }
+    
+    .styles__ButtonText-sc-80qryo-4{
+        color: white !important;
+    }
+    
+    .andes-form-control--search-box{
+        background-color: transparent !important;
     }
 }
